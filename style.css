@@ -1,0 +1,170 @@
+/* Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+}
+
+/* Main Card */
+.todo-card {
+    max-width: 700px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.todo-card h1 {
+    font-weight: 700;
+    color: #333;
+}
+
+.todo-card p {
+    color: #777;
+}
+
+/* Input */
+.form-control {
+    border-radius: 10px;
+    height: 48px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 10px rgba(37, 117, 252, 0.3);
+    border-color: #2575fc;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Filter Buttons */
+.filter-btn.active {
+    background: #2575fc;
+    color: white;
+}
+
+/* Task List */
+.list-group-item {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: fadeIn .4s ease;
+}
+
+/* Left Side */
+.task-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Completed Task */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* Action Buttons */
+.action-btn button {
+    margin-left: 5px;
+}
+
+/* Statistics */
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Empty Message */
+#emptyMessage {
+    color: gray;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background: #1e1e2f;
+}
+
+.dark-mode .todo-card {
+    background: #2b2b3c;
+    color: white;
+}
+
+.dark-mode h1,
+.dark-mode p,
+.dark-mode span {
+    color: white;
+}
+
+.dark-mode .form-control {
+    background: #444;
+    color: white;
+    border: none;
+}
+
+.dark-mode .form-control::placeholder {
+    color: #ccc;
+}
+
+.dark-mode .list-group-item {
+    background: #3a3a50;
+    color: white;
+}
+
+.dark-mode .task-info {
+    background: #444;
+}
+
+/* Responsive */
+@media (max-width:768px) {
+
+    .task-info {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .todo-card {
+        padding: 20px;
+    }
+
+}

@@ -132,9 +132,9 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Author
 
-**Your Name**
+Raj Dewarde
 
-* GitHub: https://github.com/your-username
+* GitHub: https://github.com/Rajdewarde
 * LinkedIn: https://linkedin.com/in/your-profile
 
 ---
